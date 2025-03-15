@@ -19,3 +19,15 @@ function animateOnScroll() {
 
 // Chamando a função global
 animateOnScroll();
+
+gsap.from(".introduction-person", {
+  x: -100,
+  duration: 1,
+  opacity: 0,
+});
+gsap.from(".hard-skills", {
+  x: -100,
+  opacity: 0,
+  delay: 0.5,
+  duration: 1,
+});
