@@ -12,17 +12,95 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
+
   <body>
-    <aside>
-      <img
-        src="./assets/Logo.svg"
-        alt="Logo Icone de Festa"
-        width="45px"
-        height="48px"
-      />
-      <h1 class="logo">Festivite</h1>
-      <p class="body-md">Crie um convite digital para o seu evento</p>
-    </aside>
-    <main>dawdawd</main>
+    <div id="app">
+      <aside>
+        <img
+          src="./assets/Logo.svg"
+          alt="Logo Icone de Festa"
+          width="45px"
+          height="48px"
+        />
+        <h1 class="logo">Festivite</h1>
+        <p class="body-md">Crie um convite digital para o seu evento</p>
+      </aside>
+      <main>
+        <div class="main-content">
+          <header>
+            <h1 class="heading-md">Crie seu convite</h1>
+            <div class="calendar-introduction">
+              <i data-lucide="calendar"></i>
+              <h2 class="heading-sm">Sobre o evento</h2>
+            </div>
+
+            <form>
+              <section class="form-sections">
+                <div class="form-section">
+                  <label class="body-sm" for="eventTitle">Título</label>
+                  <input
+                    type="text"
+                    id="eventTitle"
+                    placeholder="Nome do evento"
+                  />
+                </div>
+                <div class="form-two-columns">
+                  <div class="column-gap">
+                    <label class="body-sm" for="dateStart">Início</label>
+                    <input type="datetime-local" id="dateStart" />
+                  </div>
+                  <div class="column-gap">
+                    <label class="body-sm" for="dateEnd">Fim</label>
+                    <input type="datetime-local" id="dateEnd" />
+                  </div>
+                </div>
+                <div class="form-two-columns">
+                  <div class="column-gap">
+                    <label class="body-sm">Tipo</label>
+                    <div class="control-wrapper">
+                      <div class="control-type">
+                        <i data-lucide="building-2"></i>
+                        <label for="presencialType" class="body-sm"
+                          >Presencial</label
+                        >
+                        <input
+                          type="radio"
+                          id="presencialType"
+                          name="event_type"
+                          checked
+                        />
+                      </div>
+                      <div class="control-type">
+                        <i data-lucide="video"></i>
+                        <label for="onlineType" class="body-sm">Online</label>
+                        <input type="radio" id="onlineType" name="event_type" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column-gap">
+                    <label class="body-sm" for="local">Local</label>
+                    <input type="text" id="local" placeholder="Local" />
+                  </div>
+                </div>
+                <div class="form-section">
+                  <label class="body-sm" for="eventDetails">Descrição</label>
+                  <textarea
+                    name="event_details"
+                    id="eventDetails"
+                    placeholder="Escreva sobre os detalhes do evento"
+                    aria-expanded="false"
+                    rows="7"
+                  ></textarea>
+                </div>
+              </section>
+            </form>
+          </header>
+        </div>
+      </main>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
