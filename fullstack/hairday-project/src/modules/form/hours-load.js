@@ -24,7 +24,7 @@ export function hoursLoad({ date }) {
   opening.forEach(({ hour, avaliable }) => {
     const li = document.createElement("li");
     li.classList.add("hour");
-    li.classList.add(avaliable ? "hour-avaliable" : "hour-unavaliable");
+    li.classList.add(avaliable ? "hour-avaliable" : "hour-unavailable");
 
     li.textContent = hour;
 
