@@ -1,0 +1,83 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+form > header {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  input {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    flex: 1;
+    border-radius: 0.75rem;
+    border: 2px solid var(--border-primary);
+    padding: 0.7rem 1.2rem;
+    outline: none;
+    transition: all 0.5s;
+
+    &:hover {
+      border-color: var(--border-hover);
+    }
+
+    &:focus-visible {
+      border-color: var(--color-brand);
+      color: var(--content-primary);
+
+      &::placeholder {
+        color: var(--content-primary);
+      }
+    }
+  }
+
+  button {
+    padding: 0.625rem 1.5rem;
+    border: none;
+    border-radius: 0.75rem;
+    background: var(--color-brand);
+    color: var(--always-white);
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+
+    &:hover {
+      background-color: var(--color-brand-hover);
+    }
+  }
+}
+
+.shopping-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: var(--background-secondary);
+  border-radius: 0.75rem;
+  flex: 1;
+
+  & > div {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .delete-item {
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 50%;
+
+    &:hover {
+      background: var(--background-primary);
+    }
+  }
+}

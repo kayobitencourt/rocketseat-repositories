@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"
+    />
+    <title>Quicklist</title>
+  </head>
+  <body>
+    <div class="introduction-list">
+      <img
+        src="./assets/logo.svg"
+        alt="Logo do Quicklist"
+        width="150px"
+        height="40px"
+      />
+    </div>
+    <main>
+      <header>
+        <a href="#" class="link">
+          <i class="hgi hgi-stroke hgi-arrow-left-01"></i>
+          Voltar
+        </a>
+        <h1 class="title">Compras da semana</h1>
+      </header>
+      <form action="" class="form">
+        <header>
+          <input
+            type="text"
+            placeholder="Adicione um novo item"
+            id="itemName"
+          />
+          <button type="submit" class="label">Adicionar item</button>
+        </header>
+
+        <ul class="shopping-list">
+          <!-- <li class="list-item">
+            <div>
+              <input type="checkbox" class="checkbox" />
+              <p class="paragraph">Pão de forma</p>
+            </div>
+            <i class="hgi hgi-stroke hgi-delete-02 delete-item"></i>
+          </li>
+          <li class="list-item">
+            <div>
+              <input type="checkbox" />
+              <p class="paragraph">Pão de forma</p>
+            </div>
+            <i class="hgi hgi-stroke hgi-delete-02 delete-item"></i>
+          </li> -->
+        </ul>
+      </form>
+    </main>
+    <script src="./main.js" defer></script>
+  </body>
+</html>
