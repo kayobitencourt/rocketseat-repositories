@@ -10,19 +10,29 @@ form.addEventListener("submit", (event) => {
 });
 
 function createItem() {
+  // Criação dos elementos
   const item = document.createElement("li");
   const checkboxDiv = document.createElement("div");
   const input = document.createElement("input");
   const textName = document.createElement("p");
   const deleteItem = document.createElement("i");
 
+  // Definindo classes
   item.classList.add("list-item");
-  checkboxDiv.append(input, textName);
-  input.setAttribute("type", "checkbox");
-  item.append(checkboxDiv, deleteItem);
   textName.classList.add("paragraph");
-  textName.innerText = inputName.value;
   deleteItem.classList.add("hgi", "hgi-stroke", "hgi-delete-02", "delete-item");
+
+  // Definindo o tipo do input
+  input.setAttribute("type", "checkbox");
+
+  // Atribuindo o valor do nome ao texto
+  textName.innerText = inputName.value;
+
+  // Organizando a estrutura dos elementos
+  checkboxDiv.append(input, textName);
+  item.append(checkboxDiv, deleteItem);
+
+  // Adicionando o item à lista
   shoppingList.appendChild(item);
 }
 
