@@ -3,9 +3,13 @@ const shoppingList = document.querySelector(".shopping-list");
 const inputName = document.getElementById("itemName");
 
 form.addEventListener("submit", (event) => {
+  //Previnindo que ele faca o padrao.
   event.preventDefault();
 
+  //Invocando a funcao para criar o item.
   createItem();
+
+  //Limpando o campo de texto apos a criacao do item.
   inputName.value = "";
 });
 
